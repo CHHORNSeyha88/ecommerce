@@ -1,0 +1,23 @@
+.MainHeader {
+    background-color: black; /* Removed quotes */
+    height: 10vh; /* Removed quotes and fixed comma */
+    color: white; /* Removed quotes */
+    display: flex; /* Removed quotes */
+    justify-content: start; /* Removed quotes */
+    align-items: center; /* Removed quotes */
+}
+.BrandName {
+    margin-left: 10px; /* Corrected property name and removed quotes */
+    font-size: 20px; /* Corrected property name and removed quotes */
+    font-weight: bold; /* Removed quotes */
+    font-family: Arial, sans-serif; /* Removed quotes and added fallback font */
+    cursor: pointer; /* Removed quotes */
+    text-transform: uppercase; /* Removed quotes */
+    text-decoration: none; /* Removed quotes */
+    color: white; /* Removed quotes */
+    transition: color 0.5s ease-in-out; /* Removed quotes */
+}
+
+.BrandName:hover {
+    color: yellow; /* Corrected pseudo-class */
+}

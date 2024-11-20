@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './page/home/HomePage';
 import ProductPage from './page/product/ProductPage';
 import AboutPage from './page/about/AboutPage';
@@ -10,19 +9,18 @@ import LayoutManage from './components/layout/Layout';
 
 function App() {
   return (
-    <>
-    <LayoutManage />  
-      <BrowserRouter>
+    <BrowserRouter>
+      {/* Now LayoutManage is inside BrowserRouter */}
+      <LayoutManage />  
       <Routes>
-        <Route path='/' element={<HomePage />}/>
-        <Route path='/product' element={<ProductPage />}/>
-        <Route path='/category' element={<CategoryPage />}/>
-        <Route path='/about' element={<AboutPage />}/>
-        <Route path='*' element={<NotFoundPageError />}/>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/product' element={<ProductPage />} />
+        <Route path='/category' element={<CategoryPage />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='*' element={<NotFoundPageError />} />
       </Routes>
-      </BrowserRouter>
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

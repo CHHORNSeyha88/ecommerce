@@ -1,5 +1,5 @@
 .Main-Body {
-    background-color: black; /* Removed quotes */
+    background-color: rgb(39, 39, 39); /* Removed quotes */
     height: 10vh; /* Removed quotes and fixed comma */
     color: white; /* Removed quotes */
     display: flex; /* Removed quotes */
@@ -14,7 +14,7 @@
 
 }
 .BrandLogo{
-        margin-left: 10px; 
+        margin-left: 10px;  
 
 }
 .BrandName {
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    height: 10vh; /* Removed quotes and fixed comma */
     padding: 10px 20px;
 }
 
@@ -59,16 +59,17 @@
 }
 
 /* Anchor Styling */
-.Menu ul li a {
+.Menu ul li{
     color: white;
     text-decoration: none; /* Remove underline */
     padding: 10px 15px;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Smooth background change */
+    transition: background-color 0.3s ease; 
+    cursor: pointer;/* Smooth background change */
 }
 
-/* Hover Effect */
-.Menu ul li a:hover {
+/* Hover Effect */  
+.Menu ul li:hover {
     background-color: #555; /* Change background on hover */
     border-radius: 5px; /* Rounded corners */
 }

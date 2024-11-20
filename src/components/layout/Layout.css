@@ -1,23 +1,90 @@
-.MainHeader {
+.Main-Body {
     background-color: black; /* Removed quotes */
     height: 10vh; /* Removed quotes and fixed comma */
     color: white; /* Removed quotes */
     display: flex; /* Removed quotes */
-    justify-content: start; /* Removed quotes */
+    justify-content: space-between; /* Removed quotes */
     align-items: center; /* Removed quotes */
+    display: flex;
+
+}
+.Logo-Header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.BrandLogo{
+        margin-left: 10px; 
+
 }
 .BrandName {
-    margin-left: 10px; /* Corrected property name and removed quotes */
-    font-size: 20px; /* Corrected property name and removed quotes */
-    font-weight: bold; /* Removed quotes */
-    font-family: Arial, sans-serif; /* Removed quotes and added fallback font */
-    cursor: pointer; /* Removed quotes */
-    text-transform: uppercase; /* Removed quotes */
-    text-decoration: none; /* Removed quotes */
-    color: white; /* Removed quotes */
-    transition: color 0.5s ease-in-out; /* Removed quotes */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 10px 10px;  */
+    padding: 15px 15px;
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: Arial, sans-serif;
+    cursor: pointer; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    color: white; 
+    transition: color 0.5s ease-in-out; 
 }
 
 .BrandName:hover {
     color: yellow; /* Corrected pseudo-class */
+}
+/* Menu Container */
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+/* Menu List */
+.Menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* List Items */
+.Menu ul li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+/* Anchor Styling */
+.Menu ul li a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+/* Hover Effect */
+.Menu ul li a:hover {
+    background-color: #555; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .Menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Menu ul {
+        flex-direction: column;
+    }
+
+    .Menu ul li {
+        margin-bottom: 10px;
+    }
 }
